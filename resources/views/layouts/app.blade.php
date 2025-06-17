@@ -29,7 +29,13 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+              <div class="flex h-screen overflow-hidden">
+    <!-- Chat List -->
+    @include('chat.components.chat-list')
+
+    <!-- Chat Box -->
+    @include('chat.components.chat-box')
+</div>
             </main>
         </div>
     </body>
